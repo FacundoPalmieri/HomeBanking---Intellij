@@ -1,0 +1,719 @@
+
+ body {
+        font-family: Arial, sans-serif; 
+        margin:0px;
+    }
+    
+ .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+.section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.options {
+    display: none;
+}
+
+/* Estilos para el despliegue de opciones al hacer clic */
+.options.visible {
+    display: block;
+}  
+
+#General
+	{
+		width:100%;
+		height: 100%;
+		position: absolute;
+	
+	}
+	
+	
+
+
+ /* - LOGIN-*/
+ div#pantalla_principal_izquierda {
+    padding-left: 10%;
+    padding-top: 10%;
+}
+ 
+
+
+ /* -SECCION LOGIN INICIO -*/
+#Login
+	{
+		background-color:#D6DFE6;
+		width:40%;
+		height: 100%;
+		float:right;
+		display: inline-block;
+		border-radius: 40px 0px 0px 0px; 
+		justify-content: center;
+		align-items: center;	
+        text-align: center;
+        font: arial;
+	
+	}
+
+ #Login form {
+      width: 100%; 
+    }
+	
+	
+	
+#Login input[type="text"],
+#Login input[type="password"]
+{
+    width: 60%; /* Ajusta el ancho de las cajas de texto */
+    padding: 10px; /* Añade relleno dentro de las cajas de texto */
+    margin-bottom: 20px; /* Añade espacio entre las cajas de texto */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    border: 1px solid #ccc; /* Añade un borde */
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+
+#Login input[type="submit"]	{
+	 margin-bottom: 5%; 
+	 border-radius: 5px; 
+	 width: 20%;
+	 font-size: 16px;
+	 
+	
+}
+
+
+ /* -SECCION LOGIN FIN -*/
+
+
+
+
+ /* - LINK RECUPERAR O CREAR USUARIO-*/
+
+ .info-text {
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+
+  .info-list {
+            list-style-type: none;
+            padding: 0;
+        }  
+        
+        
+  .info-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        
+
+#Bienvenido
+	{
+		background-color:white;
+		width:60%;
+		display: inline-block;
+		color: black;
+		font-family: system-ui;
+	}
+	
+ /* -Margen izquierdo bienvenida-*/
+ 
+ .logo{
+ 	width: 23%;
+ }
+ 
+ 
+ 
+
+ #gift-bienvenida{
+ 	width: 88%;
+ }
+ 
+ /* - Fin Margen izquierdo bienvenida-*/
+	
+
+	
+	
+	
+ /* -SECCIÓN ALTA CLIENTE-*/
+ .accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   transition: 0.4s;
+   margin-top: 10px;
+  }
+ 
+.active, .accordion:hover {
+   background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.panel {
+ padding: 0 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ }
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+label {
+ display: block;
+ margin-bottom: 5px;
+ }
+
+ input[type="text"], input[type="date"], input[type="email"], input[type="password"],  input[type="number"], select {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+ input[type="submit"] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 15px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 50px;
+   margin-left: 5px;
+   box-sizing: border-box;
+}
+
+
+input[type="submit"]:hover {
+   background-color: #45a049;
+}
+
+ input[type="button"] {
+   background-color: #778899;
+   color: white;
+   padding: 15px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 50px;
+   box-sizing: border-box;
+}
+
+   .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* aumentar este valor para más separación */
+}
+
+.flex-item {
+    flex: 1 1 calc(50% - 30px); 
+    min-width: 200px;
+   
+}
+.banner {
+    background-color: #78AD89;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo_encabezado_izquierda {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo_encabezado_izquierda img.logo_encabezado {
+    max-width: 100px; 
+    margin-right: 10px;
+}
+
+.logo_encabezado_derecha {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo_encabezado_derecha a.logout {
+    margin-left: 10px; 
+}
+
+.logo_encabezado_derecha a.logout img.logo_encabezado {
+    width: 40px; 
+    height: auto;
+}
+
+.botonera{
+	background-color: white!important; 
+    color: #808080!important;
+    border: 2px solid #78AD89!important;
+    padding: 10px 20px!important; 
+    font-size: 16px!important;
+    cursor: pointer!important; 
+    text-decoration: none!important; 
+    display: inline-block!important;
+    text-align: center!important; 
+    border-radius: 5px!important;
+    margin: 5px;"
+}
+
+a.botonera {
+	
+margin-top: auto!important;
+}
+
+/* Estilos del popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 30%;
+    background-color: #f5f7f9;
+    color: black;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative; 
+}
+
+.close-btn {
+    position: fixed;
+    top: 30%;
+    right: 40%;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+/*TABLA DE LISTAR CLIENTES */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+  
+  
+  
+  /*USUARIO ADMINISTRADOR */  
+  
+   .button-container {
+    display: flex;
+    justify-content:center; /* Centra los elementos horizontalmente */
+    margin-top: 20px;
+}
+
+
+
+
+/*BUSCAR CLIENTES */
+#BusquedaCliente, #FiltroBusqueda {
+    background-color: white;
+    width: 300px; /* Ajustado para dar más espacio al botón */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-family: system-ui;
+    margin-top: 20px;
+    margin-left: 550px;
+}
+
+#BusquedaCBU {
+    background-color: white;
+    width: 300px; /* Ajustado para dar más espacio al botón */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-family: system-ui;
+    margin-top: 20px;
+    margin-left: 550px;
+}
+
+#BusquedaCliente input[type="submit"] {
+    margin-top: -5px; /* Ajusta este valor según sea necesario */
+}
+
+#BusquedaCBU input[type="submit"] {
+    margin-top: -5px; /* Ajusta este valor según sea necesario */
+}
+
+#ResultadoBusqueda, #DestinoTransferencia {
+    background-color: white;
+    width: calc(100% - 450px); /* Calcula el ancho del contenedor excluyendo el espacio del contenedor BusquedaCliente y un margen adicional */
+    margin-top: 20px;
+    margin-left: 100px;
+    float: right; /* Hace que el contenedor flote a la derecha */
+}
+
+#ResultadoBusquedaCBU {
+    background-color: white;
+    width: calc(100% - 450px); /* Calcula el ancho del contenedor excluyendo el espacio del contenedor BusquedaCliente y un margen adicional */
+    margin-top: 20px;
+    margin-left: 100px;
+    float: right; /* Hace que el contenedor flote a la derecha */
+}
+
+#ResultadoBusqueda input[type="text"],
+#ResultadoBusqueda input[type="password"] {
+    width: 450px; /* Define el ancho deseado para los campos de entrada */
+}
+
+#ResultadoBusquedaCBU input[type="text"]{
+    width: 450px; /* Define el ancho deseado para los campos de entrada */
+}
+
+#DestinoTransferencia input[type="text"]{
+    width: 450px; /* Define el ancho deseado para los campos de entrada */
+}
+
+.styled-select {
+    width: 450px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50%;
+}
+
+/* ESTILO TABLA */
+
+.display {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+    
+.display th, .display td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        word-wrap: break-word;
+        font-size: 12px;
+    }
+
+.display th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+    }
+
+.display tr:nth-child(even) {
+	background-color: #f9f9f9;
+    }
+
+.display tr:hover {
+	background-color: #f1f1f1;
+    }
+    
+.btnEspecial {
+     background-color: #78AD89;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-left: 0;
+     box-sizing: border-box;
+     margin-top: 0px;
+     font-size: 90%;
+     padding: 10px 10px;
+     text-align: center;
+     text-decoration: none; /* Remove underline for links */
+     display: inline-block; /* Ensure block styling for links */
+  
+}
+
+ input[type="button"].btnEspecial {
+           
+        }
+
+.display td {
+    overflow: hidden; 
+}
+
+
+/* estilo detalle cuenta*/
+
+.cuenta{
+    box-sizing: border-box;
+    font-size: 90%;
+    padding: 10px 10px;
+    border: 1px solid #778899;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 90%;
+    padding: 10px 10px;
+    margin: 2%;
+}
+
+/* estilo tabla prestamo*/
+
+.custom-table {
+    /* Estilos espec�ficos para tu tabla personalizada */
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* estilo carga domicilio*/
+
+.form-group-domicilio {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+    }
+
+.form-group-domicilio .group {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-right: 20px;
+    }
+
+.form-group-domicilio .group:last-child {
+	margin-right: 0;
+    }
+    
+.tabla{
+	border: 1px solid #ccc;
+}
+
+.pagar_cuota{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+
+}
+
+.panel.pagar_cuota {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+ /* estilo pedir pr�stamo*/
+ 
+ .btnPrestamo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+.fullscreen-gif {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: 9999;
+    }
+    
+    .invisible {
+        display: none;
+    }
+    
+.btnHabilitar{
+	background-color: #4CAF50 !important;
+}   
+
+.cuenta {
+    display: flex;
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 520px; /* Ajusta el ancho m�ximo seg�n tu preferencia */
+    margin: 10px auto; /* Centra el contenedor horizontalmente y ajusta el margen superior */
+}
+
+.cuenta-item {
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro de cada item */
+    align-items: center;
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    padding-right: 0px;
+    text-align: center; /* Centra el texto */
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+.value {
+    color: #555;
+    margin-left: 5px; /* Ajusta el margen izquierdo para separarlo del label */
+}
+
+.table-container {
+        margin: auto; /* Ajusta el margen superior/inferior a 20px y centra horizontalmente */
+        width: 97%; /* Ajusta el ancho de la tabla al 90% del contenedor */
+    }
+.toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+.toggle-container label {
+            order: 1;
+            margin-right: 10px; /* Espacio entre el label y el checkbox */
+        }
+
+.toggle-container input[type="checkbox"] {
+            order: 2;
+        }
+        
+        
+ 
+ 
+ 
+ 
+/* DATA TABLE - BUSCADOR DINAMICO       
+        
+/* Cambia el color de fondo y el borde del campo de b�squeda */
+.dataTables_filter input {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Cambia el estilo del texto de la etiqueta del campo de b�squeda */
+.dataTables_filter label {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+/* DATA TABLE - DESPLEGABLE CANTIDAD DE REGISTROS
+
+/* Cambia el fondo y el borde del contenedor de longitud de DataTables */
+.dataTables_length {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Cambia el estilo del texto del contenedor de longitud de DataTables */
+.dataTables_length label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Cambia el estilo del elemento select dentro del contenedor de longitud */
+.dataTables_length select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+/* Estilos gr�ficos */
+
+
+#estadoChart, #estadoFinanciero {
+	width: 300px !important;
+    height: 300px !important;
+}
+
+.contenedorGraficos{
+	display: flex;
+    justify-content: space-around;
+}
+        
